@@ -5,3 +5,5 @@ Repo for capstone one
   Avalnche data
   
 # Idea 2
+  Formula one statistics
+  link: http://ergast.com/mrd/db/
