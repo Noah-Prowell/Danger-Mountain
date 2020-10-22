@@ -7,6 +7,7 @@ Ideas for capstone one
    -link: http://ergast.com/mrd/db/
    
    1.Graphs: 
+   
      -A plot of the duration of pit stops for races withing the last 10 years.
      
      -A plot of the duration of pit stops for races withing the last 10 years.
@@ -16,14 +17,16 @@ Ideas for capstone one
      -...(think of more)
             
   2.Regressions: 
+  
     -Do constructors perform better at a home circuit?
     
     -Do drivers perform better at a home circuit?
             
   3.Statisctics: 
-   -Is the number of pitstops correlated to the final results of a race?
+  
+    -Is the number of pitstops correlated to the final results of a race?
    
-   -Variance of first qualifying compared to third qualifying
+    -Variance of first qualifying compared to third qualifying
 
 # Idea 2
   ### Avalanche data
