@@ -2,7 +2,7 @@
 Ideas for capstone one
   
 # Idea 1
-  ### Formula one statistics:
+  ### Formula one statistics(contains varying data from 1950 to 2020):
   
    -link: http://ergast.com/mrd/db/
    
