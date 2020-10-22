@@ -3,15 +3,15 @@ Ideas for capstone one
   
 # Idea 1
   Formula one statistics
-  link: http://ergast.com/mrd/db/
-  Graphs: A plot of the duration of pit stops for races withing the last 10 years.
-  Number of wins per nationality
-  number of contructor wins per constructor
-  ...(think of more)
-  regressions: Do constructors perform better at a home circuit?
-               Do drivers perform better at a home circuit?
-  Statisctics: Is the number of pitstops correlated to the final results of a race?
-               Variance of first qualifying compared to third qualifying
+  -link: http://ergast.com/mrd/db/
+  -Graphs: A plot of the duration of pit stops for races withing the last 10 years.
+  -Number of wins per nationality
+  -number of contructor wins per constructor
+  -...(think of more)
+  -regressions: Do constructors perform better at a home circuit?
+               -Do drivers perform better at a home circuit?
+  -Statisctics: Is the number of pitstops correlated to the final results of a race?
+               -Variance of first qualifying compared to third qualifying
 
 # Idea 2
   Avalanche data
