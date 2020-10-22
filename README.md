@@ -16,7 +16,7 @@ Ideas for capstone one
      
      -...(think of more)
             
-  2.Regressions: 
+  2.Possible regressions: 
   
     -Do constructors perform better at a home circuit?
     
@@ -43,7 +43,7 @@ Ideas for capstone one
     
     -Aspect degrees and length
     
-  2.Regressions:
+  2.Possible regressions:
     -does a higher aspect degree mean a greater damage area?
     
     -Does a dry snow type cause a larger avalanche?
