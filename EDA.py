@@ -101,9 +101,7 @@ av_df_unknown = av_df[av_df['trigger_type'] == 'UNKNOWN']
 
 
 
-"""Idea: 3D graph the verticle data of 20 random avalanches in a circle 
-around a central point, the min height point will be pivoted out according to the ascpect degree
-then color each line and point to the level of danger corresponding with the avalanche"""
+"""Idea: A heat map of the aspect degrees on a map of davos where red is a southern face and blue is a northern face"""
 
 
 # Regression 1: If the  aspect degrees increases then the area will also increase

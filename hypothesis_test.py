@@ -22,7 +22,8 @@ then color each line and point to the level of danger corresponding with the ava
 
 #hypothesis test 2:  the mean area of avalanches with wet snow type is equal to the mean area with dry snow type
 """
-h0: mean area of dry avalanches= mean area of wet avalanches
+h0: mean area of dry avalanches = mean area of wet avalanches
+ha: mean area of dry avalanches != mean area of wet avalanches
 or
 h0 : mean area of dry avalaches - mean area of wet avalanches = 0
 ha: mean area of dry avalaches - mean area of wet avalanches != 0
