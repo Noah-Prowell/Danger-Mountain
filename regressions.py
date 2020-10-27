@@ -72,28 +72,43 @@ then color each line and point to the level of danger corresponding with the ava
 # normal_appox = stats.norm(ad_normalized_mean, np.sqrt(ad_normalized_var)).cdf(45)
 # # graph the pdf
 
-#hypothesis test 2:  the number of avalanches with wet snow type is equal to the number with dry snow type
+#hypothesis test 2:  the mean area of avalanches with wet snow type is equal to the mean area with dry snow type
 """
-h0: # avalanches dry = # of avalanches wet
-ha: # avalanches dry != # of avalanches wet
+h0: mean area of dry avalanches= mean area of wet avalanches
 or
-h0 : avalaches dry - avalanches wet = 0
-ha: avalaches dry - of avalanches wet != 0
+h0 : mean area of dry avalaches - mean area of wet avalanches = 0
+ha: mean area of dry avalaches - mean area of wet avalanches != 0
 """
 dry = av_df[av_df['snow_type'] == 'dry']   
 wet = av_df[av_df['snow_type'] == 'wet']
-
 alpha = .05
-shared_freq = (len(dry)+len(wet))/ len(av_df)
-variance = (11925*shared_freq*(1-shared_freq))/(len(dry)*len(wet))
-difference_in_count = stats.norm(0, np.sqrt(variance))
-threshold = difference_in_count.ppf(1-alpha)
 
+dry_area_mean = dry.mean()[6]
+wet_area_mean = wet.mean()[6]
+total_area_mean = av_df.mean()[6]
+mean_diff = dry_area_mean - wet_area_mean
+
+dry_area_std = dry.std()[6]
+wet_area_std = wet.std()[6]
+
+n_wet = len(wet)
+n_dry = len(dry)
+
+tstat = (dry_area_mean - wet_area_mean)/((dry_area_std**2/n_dry) + (wet_area_std**2/n_wet))
+
+p_val = stats.ttest_ind(dry['area_m2'].dropna(), wet['area_m2'].dropna(), equal_var = False)[1] 
+
+st_error = np.sqrt((dry_area_std**2/len(dry)) + (wet_area_std**2/len(wet)))
+
+null_distribution = stats.norm(0, st_error)
+threshold = null_distribution.ppf(1-alpha)
 fig, ax = plt.subplots(1, figsize=(16, 3))
 
-x = np.linspace(-1, 1, num=2500)
-ax.plot(x, difference_in_count.pdf(x), linewidth=3)
-ax.axvline(threshold)
-ax.fill_between(x, 0, difference_in_count.pdf(x), x>threshold, color = 'blue')
-ax.set_xlim(-.025, .025)
-ax.set_title("Distribution of Difference in Sample Frequencies Assuming $H_0$");
+x = np.linspace(-3000, 3000, num=2500)
+ax.plot(x, null_distribution.pdf(x), linewidth=3)
+ax.axvline(threshold, color = 'blue', label = '95 Percent Threshold')
+ax.axvline(mean_diff, color = 'green', label = 'Actual Diff in Means')
+ax.fill_between(x, 0, null_distribution.pdf(x), x>threshold, color = 'blue')
+ax.set_xlim(-3000,5500)
+ax.set_title(f'{100*alpha}% of the area under the curve falls to the right of {round(threshold,3)}')
+ax.set_xlabel();
