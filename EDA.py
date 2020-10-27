@@ -106,9 +106,9 @@ around a central point, the min height point will be pivoted out according to th
 then color each line and point to the level of danger corresponding with the avalanche"""
 
 
-# Regression 1: An aspect degree of 45 leads to a larger avalanche
+# Regression 1: If the  aspect degrees increases then the area will also increase
 aspect_degrees_area = get_two_columns(av_df, 'aspect_degrees', 'area_m2')
 aspect_degrees_area.dropna(inplace=True)
 """ 
-H0: degree = 45
-HA : degree != 45
+H0: 
+"""
