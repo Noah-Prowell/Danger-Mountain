@@ -110,29 +110,29 @@ av_df_unknown = av_df[av_df['trigger_type'] == 'UNKNOWN']
 # plt.ylabel('Percent of aspect degree in each group')
 # plt.savefig("aspect_deg_hist")
 
-# danger_area, danger_mean, danger_median = get_two_columns_mean_median(av_df, 'max.danger.corr', 'area_m2', 'max.danger.corr', 'area_m2')
+danger_area, danger_mean, danger_median = get_two_columns_mean_median(av_df, 'max.danger.corr', 'area_m2', 'max.danger.corr', 'area_m2')
 
-# sns.catplot(x = 'max.danger.corr', y = 'area_m2', data = danger_area)
-# plt.ticklabel_format(axis = 'y', style = 'plain')
-# plt.title('Danger Correlation vs. Avalanche area')
-# plt.ylabel('Avalanche area in m^2')
-# plt.xlabel('Avalanche danger (1 being high danger 5 being low)')
+sns.catplot(x = 'max.danger.corr', y = 'area_m2', data = danger_area)
+plt.ticklabel_format(axis = 'y', style = 'plain')
+plt.title('Danger Correlation vs. Avalanche area')
+plt.ylabel('Avalanche area in m^2')
+plt.xlabel('Avalanche danger (1 being high danger 5 being low)')
 # plt.savefig('danger_area_bar_scatter.png')
 
 
 # line graph of the area of each trigger types
-natural_area = av_df_natural['area_m2']
-human_area = av_df_human['area_m2']
-unknown_area = av_df_unknown['area_m2']
+# natural_area = av_df_natural['area_m2']
+# human_area = av_df_human['area_m2']
+# unknown_area = av_df_unknown['area_m2']
 
 
-fig, ax = plt.subplots()
-plt.yscale('log')
-ax.scatter(av_df_natural['no'], natural_area, color = 'red', label = 'Natural avalaches', alpha = .06)
-ax.scatter(av_df_human['no'], human_area, color = 'green', label = 'Human avalaches', alpha = .06)
-ax.scatter(av_df_unknown['no'], unknown_area, color = 'blue', label = 'Unknown avalaches', alpha = .06)
-ax.set_ylabel('Avalanche area')
-ax.set_xlabel('Avalanche number')
-ax.set_title('Avalanche area for each avalanche')
-plt.legend()
-plt.savefig('area_scatter_for_each.png')
+# fig, ax = plt.subplots()
+# plt.yscale('log')
+# ax.scatter(av_df_natural['no'], natural_area, color = 'red', label = 'Natural avalaches', alpha = .06)
+# ax.scatter(av_df_human['no'], human_area, color = 'green', label = 'Human avalaches', alpha = .06)
+# ax.scatter(av_df_unknown['no'], unknown_area, color = 'blue', label = 'Unknown avalaches', alpha = .06)
+# ax.set_ylabel('Avalanche area')
+# ax.set_xlabel('Avalanche number')
+# ax.set_title('Avalanche area for each avalanche')
+# plt.legend()
+# plt.savefig('area_scatter_for_each.png')
