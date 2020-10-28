@@ -8,6 +8,12 @@ link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resour
 
 # EDA
 
+To start my EDA I plotted a few of my variables as histograms as well as a scatter plot to help me visualize the data.
+
+<p align="center">
+    <img src="aspect_deg_hist.png" width='700'/>
+</p>
+
 
   
 
