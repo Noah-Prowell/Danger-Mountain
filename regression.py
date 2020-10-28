@@ -52,5 +52,6 @@ def best_fit_slope_and_intercept(xs,ys):
 
 
 dt = av_df[['North_South','West_East', 'area_m2']].dropna()
-model = smf.quantreg(formula = 'area_m2 ~ North_South + West_East', data = dt).fit()
+model1 = smf.quantreg(formula = 'area_m2 ~ North_South + West_East', data = dt).fit()
+model2 = smf.ols(formula = 'area_m2 ~ North_South + West_East', data = dt).fit()
 
