@@ -62,9 +62,14 @@ results2 = model2.fit()
 residuals1 = results1.resid
 residuals2 = results2.resid
 
-sns.residplot('elev_diff', 'area_m2', data = dt, color = 'blue')
-plt.title('Elevation difference residual plot')
-plt.savefig('elev_diff_resid.png')
+# with open('quantile_summary.txt', 'w') as fh:
+#     fh.write(results1.summary().as_text())
+# with open('linear_summary.txt', 'w') as fh:
+#     fh.write(results2.summary().as_text())
+
+# sns.residplot('elev_diff', 'area_m2', data = dt, color = 'blue')
+# plt.title('Elevation difference residual plot')
+# plt.savefig('elev_diff_resid.png')
 # gplots.qqplot(residuals2, line = "s")
 # plt.title('Linear qqplot')
 # plt.savefig('linear_reg_qqplot.png')
