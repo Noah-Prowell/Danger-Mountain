@@ -1,6 +1,7 @@
 import pandas as pd 
 import numpy as np 
 import matplotlib.pyplot as plt
+import seaborn as sns
 plt.style.use('ggplot')
 
 av_df = pd.read_csv('avalanche_data_set.csv', delimiter=';')
@@ -103,10 +104,17 @@ av_df_unknown = av_df[av_df['trigger_type'] == 'UNKNOWN']
 
 """Idea: A heat map of the aspect degrees on a map of davos where red is a southern face and blue is a northern face"""
 
+# plt.hist(av_df['aspect_degrees'])
+# plt.title('Aspect Degrees Histogram')
+# plt.xlabel('Aspect Degrees')
+# plt.ylabel('Percent of aspect degree in each group')
+# plt.savefig("aspect_deg_hist")
 
-# Regression 1: If the  aspect degrees increases then the area will also increase
-aspect_degrees_area = get_two_columns(av_df, 'aspect_degrees', 'area_m2')
-aspect_degrees_area.dropna(inplace=True)
-""" 
-H0: 
-"""
+danger_area, danger_mean, danger_median = get_two_columns_mean_median(av_df, 'max.danger.corr', 'area_m2', 'max.danger.corr', 'area_m2')
+
+sns.catplot(x = 'max.danger.corr', y = 'area_m2', data = danger_area)
+plt.ticklabel_format(axis = 'y', style = 'plain')
+plt.title('Danger Correlation vs. Avalanche area')
+plt.ylabel('Avalanche area in m^2')
+plt.xlabel('Avalanche danger (1 being high danger 5 being low)')
+plt.savefig('danger_area_bar_scatter.png')
