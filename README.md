@@ -7,15 +7,44 @@ I changed my index to the avalanche number.  I also changed the dae_release to a
 link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resource/4c2b7c38-a874-45fc-9833-fdf83823067b/download/data_set_1_avalanche_observations_wi9899_to_wi1819_davos.csv
 
 # EDA
+1. Snow types
+   - dry
+   - wet
+   - mixed
+   - unknown
+2. Trigger types
+   - Human
+   - Natural
+   - Unknown
+3. Different columns described
+   - Aspect degrees:
+     - A degree of the face of the mountain in relation to the sun.
+   - Max danger
+     - A ranking of 1-5 of the danger of the avalanche 1 being the worst.
+   - Size class
+     - A ranking of 1-5 of the size of the avalanche 1 being the smallest.
 
-To start my EDA I plotted a few of my variables as histograms as well as a scatter plot to help me visualize the data.
+4. Here are a few statistics about my data:
+   - Mean aspect degrees: 151.415
+   - Median aspect degrees: 125.0
+   - Mean impact area: 16638.671
+   - Median impact area: 5624.5
+
+To continue my EDA I plotted a few of my variables as histograms as well as a scatter plot to help me visualize the data.
 
 <p align="center">
     <img src="aspect_deg_hist.png" width='700'/>
 </p>
 
+<p align="center">
+    <img src="danger_area_bar_scatter.png" width='700'/>
+</p>
 
-  
+<p align="center">
+    <img src="area_scatter_for_each.png" width='700'/>
+</p>
+
+
 
 # Avalanche data for Davos Switzerland 1999-2019
   link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resource/4c2b7c38-a874-45fc-9833-fdf83823067b/download/data_set_1_avalanche_observations_wi9899_to_wi1819_davos.csv
