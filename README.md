@@ -77,7 +77,9 @@ My first step to do this regression is to visualize the data to get a better ide
 <br />
 As you can see above my data is not very good to be running regressions on.  It definitly violates some assumtions for a linear regression.  So for my north and south regression I used a quantile regression instead so that I do not violate the assumtions of a linear regression.  The assumptions of a quantile regression are linearity, no multicolinearity, and independence.  The quantile regression was a more appropraite model because my data is not very highly correlated and is not normally distributed.  
 <br />
+<br />
 For my second regression the data is a little better to not violate the assumtions of a linear regression although it is far from perfect.  Below are two qqplots for each of my regressions showing that neither of my regressions data follow a normal distrubtion perfectly.  
+<br />
 <br />
 First is the north and south quantile regression
 <p align="center">
