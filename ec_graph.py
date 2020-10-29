@@ -45,4 +45,3 @@ ax.legend()
 plt.show()
 
 
-# sns.catplot(x = 'aspect_degrees', y = 'max.danger.corr', data = dt)
