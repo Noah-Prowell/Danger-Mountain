@@ -88,7 +88,7 @@ First is the north and south quantile regression
 <br />
 Next is the difference in elevation linear regression
 <p align="center">
-    <img src="linear_reg_qqplot.png" size = '600x600'/>
+    <img src="linear_reg_qqplot.png" size = '800x600'/>
 </p>
 <br />
 To further show how my second regression violates the assumtions for a linear regression, below is a residuals plot that shows how much heteroscedasticity is contained in my data.
