@@ -67,11 +67,11 @@ residuals2 = results2.resid
 # with open('linear_summary.txt', 'w') as fh:
 #     fh.write(results2.summary().as_text())
 
-sns.residplot('elev_diff', 'area_m2', data = dt, color = 'blue')
-plt.title('Elevation difference residual plot')
+# sns.residplot('elev_diff', 'area_m2', data = dt, color = 'blue')
+# plt.title('Elevation difference residual plot')
 # plt.savefig('elev_diff_resid.png')
-# gplots.qqplot(residuals2, line = "s")
-# plt.title('Linear qqplot')
+gplots.qqplot(residuals2, line = "s")
+plt.title('Linear qqplot')
 # plt.savefig('linear_reg_qqplot.png')
 # gplots.qqplot(residuals1, line = "s")
 # plt.title('Quantile qqplot')
