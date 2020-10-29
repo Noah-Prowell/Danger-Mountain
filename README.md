@@ -56,15 +56,15 @@ or
 - h0 : mean area of dry avalaches - mean area of wet avalanches = 0
 - ha: mean area of dry avalaches - mean area of wet avalanches != 0
 <br />
-Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, and a standard error os 1153.24.  Looking below at the graph of my test we can see that we are 95% confident that our population mean is outside -1153.24 and 1153.24.  As shown in the graph my actuall sample mean is represented by the green line which is far outside my distribution.  
+Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, and a standard error os 1153.24.  Looking below at the graph of my test we can see that we are 95% confident that our sample mean is outside -1153.24 and 1153.24.  As shown in the graph my actuall sample mean is represented by the green line which is far outside my distribution.  
 <br />
 <p align="center">
     <img src="dry_v_wet.png" width='750', height = "300"/>
 </p>
 <br />
 <br />
-- The p-value = 1.6599364216596502e-13, which is less than our significance level of 0.05, so we must reject the null hypothesis.
 
+- The p-value = 1.6599364216596502e-13, which is less than our significance level of 0.05, so we must reject the null hypothesis.
 - The probability of seeing these sample means given the null hypothesis is true is 1.6599364216596502e-13
 
 
