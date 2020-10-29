@@ -95,6 +95,55 @@ To further show how my second regression violates the assumtions for a linear re
 <p align="center">
     <img src="elev_diff_resid.png" size = '700x400'/>
 </p>
+<br />
+Below is the summary table for my quantile regression, the effect on area from mountains tha face north and south. 
+<br />
+
+                         QuantReg Regression Results                          
+==============================================================================
+Dep. Variable:                area_m2   Pseudo R-squared:            9.752e-05
+Model:                       QuantReg   Bandwidth:                       1678.
+Method:                 Least Squares   Sparsity:                    1.758e+04
+Date:                Wed, 28 Oct 2020   No. Observations:                13781
+Time:                        16:13:50   Df Residuals:                    13779
+                                        Df Model:                            1
+===============================================================================
+                  coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------
+Intercept    5636.4933     74.890     75.264      0.000    5489.699    5783.287
+North_South   209.9176    105.902      1.982      0.047       2.335     417.500
+===============================================================================
+<br />
+Conclusion: On average a single increase in aspect degree to the north or south direction leads to an increase in area of 226.33 meters<sup>2</sup> using quantile regression.  My p-value is right on the cusp of the .05 significance level for rejecting the null hypothesis.  Which again can be seen in the confidence interval as it is very close to containing zero.  
+<br />
+Next is the summary table for my linear regression, the effect on area from difference in elevation.
+<br />
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                area_m2   R-squared:                       0.387
+Model:                            OLS   Adj. R-squared:                  0.387
+Method:                 Least Squares   F-statistic:                     8697.
+Date:                Wed, 28 Oct 2020   Prob (F-statistic):               0.00
+Time:                        16:13:50   Log-Likelihood:            -1.6351e+05
+No. Observations:               13781   AIC:                         3.270e+05
+Df Residuals:                   13779   BIC:                         3.270e+05
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept  -1.386e+04    438.594    -31.598      0.000   -1.47e+04    -1.3e+04
+elev_diff    198.6007      2.130     93.255      0.000     194.426     202.775
+==============================================================================
+Omnibus:                    20882.643   Durbin-Watson:                   1.880
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):         14123201.474
+Skew:                           9.315   Prob(JB):                         0.00
+Kurtosis:                     158.721   Cond. No.                         308.
+==============================================================================
+<br />
+Conclusion: On average a single increase is the difference in elevation leads to an increase in avalanche area of 198.6 meters<sup>2</sup>.  In this regression my data is at least a little bit correlated with each other.  But is not very normal according to the Durbin-Watson test.  Ignoring that my p-value is so small it is basically zero meaning my data is significant and there is a very small chance that my 95% confidence interval will contain zero.
+
 # Avalanche data for Davos Switzerland 1999-2019
   link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resource/4c2b7c38-a874-45fc-9833-fdf83823067b/download/data_set_1_avalanche_observations_wi9899_to_wi1819_davos.csv
   
