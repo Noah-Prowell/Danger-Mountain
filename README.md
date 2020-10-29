@@ -58,7 +58,7 @@ or
 <br />
 
 <p align="center">
-    <img src="dry_v_wet.png" width='750', height = "250"/>
+    <img src="dry_v_wet.png" width='800', height = "200"/>
 </p>
 
 
