@@ -43,6 +43,10 @@ To continue my EDA I plotted a few of my variables as histograms as well as a sc
 <p align="center">
     <img src="area_scatter_for_each.png" width='700'/>
 </p>
+<br />
+<p align="center">
+    <img src="danger_deg_len.png" width='700'/>
+</p>
 
 
 # Hypothesis Test
