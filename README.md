@@ -59,7 +59,7 @@ or
 Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, and a standard error os 1153.24.  Looking below at the graph of my test we can see that we are 95% confident that our population mean is outside -1153.24 and 1153.24.  As shown in the graph my actuall sample mean is represented by the green line which is far outside my distribution.  
 <br />
 <p align="center">
-    <img src="dry_v_wet.png" width='800', height = "300"/>
+    <img src="dry_v_wet.png" width='900', height = "400"/>
 </p>
 
 - The p-value = 1.6599364216596502e-13, which is less than our significance level of 0.05, so we must reject the null hypothesis.
