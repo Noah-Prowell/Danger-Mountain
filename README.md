@@ -45,7 +45,7 @@ To continue my EDA I plotted a few of my variables as histograms as well as a sc
 </p>
 <br />
 <p align="center">
-    <img src="danger_deg_len.png" width='700'/>
+    <img src="danger_deg_len.png" size = '800x800'/>
 </p>
 
 
