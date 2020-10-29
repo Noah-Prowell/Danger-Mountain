@@ -1,8 +1,11 @@
 # Danger Mountain
 
-The dataset I decided to use is avalanche data from the ski resorts inside of Davos, Switzerland.  The data ranged from the year 1998 up to 2019.  My data was drawn from Kaggle and was set up quite nicely to begin with.  It started with the avalanche number, the date of release, the snow type, trigger type, max and min elevation in meters, aspect degrees, length, width, perimeter length, area, size class, weight, and max danger correlation.
+The dataset I decided to use is avalanche data from the ski resorts inside of Davos, Switzerland.  The data ranged from the year 1998 up to 2019.  My data was drawn from Kaggle and was set up quite nicely to begin with.  
 
-I changed my index to the avalanche number.  I also changed the dae_release to a date time.  And the snow type, triiger type to a catageroical.  Afer doing this I was ready to start my EDA.
+# My Data and Data Cleaning
+It started with the avalanche number, the date of release, the snow type, trigger type, max and min elevation in meters, aspect degrees, length, width, perimeter length, area, size class, weight, and max danger correlation.
+
+I changed my index to the avalanche number.  I also changed the date_release to a date time.  I changed the snow type and trigger type to a catageroical.  Afer doing this I was ready to start my EDA.
 
 link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resource/4c2b7c38-a874-45fc-9833-fdf83823067b/download/data_set_1_avalanche_observations_wi9899_to_wi1819_davos.csv
 
@@ -23,6 +26,8 @@ link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resour
      - A ranking of 1-5 of the danger of the avalanche 1 being the worst.
    - Size class
      - A ranking of 1-5 of the size of the avalanche 1 being the smallest.
+   - Area
+     - The final area the avalanche covers  
 
 4. Here are a few statistics about my data:
    - Mean aspect degrees: 151.415
@@ -30,7 +35,7 @@ link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resour
    - Mean impact area: 16638.671
    - Median impact area: 5624.5
 
-To continue my EDA I plotted a few of my variables as histograms as well as a scatter plot to help me visualize the data.
+To continue my EDA I plotted a few of my variables to help me visualize the data.
 
 <p align="center">
     <img src="aspect_deg_hist.png" width='700'/>
