@@ -93,7 +93,7 @@ Next is the difference in elevation linear regression
 <br />
 To further show how my second regression violates the assumtions for a linear regression, below is a residuals plot that shows how much heteroscedasticity is contained in my data.
 <p align="center">
-    <img src="elev_diff_resid.png" width='700'/>
+    <img src="elev_diff_resid.png" width='750'/>
 </p>
 # Avalanche data for Davos Switzerland 1999-2019
   link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resource/4c2b7c38-a874-45fc-9833-fdf83823067b/download/data_set_1_avalanche_observations_wi9899_to_wi1819_davos.csv
