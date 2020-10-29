@@ -48,15 +48,17 @@ To continue my EDA I plotted a few of my variables as histograms as well as a sc
 # Hypothesis Test
 
 For my hypothesis test I decided to test whether the mean area of avalanches with wet snow type is equal to the mean area with dry snow type.  <br />
+<br />
 Listed below is my two tail null and alternate hypothesis:
 - h0: mean area of dry avalanches = mean area of wet avalanches
-- ha: mean area of dry avalanches != mean area of wet avalanches
+- ha: mean area of dry avalanches != mean area of wet avalanches <br />
 or
 - h0 : mean area of dry avalaches - mean area of wet avalanches = 0
 - ha: mean area of dry avalaches - mean area of wet avalanches != 0
+<br />
 
 <p align="center">
-    <img src="dry_v_wet.png" width='500'/>
+    <img src="dry_v_wet.png" width='600'/>
 </p>
 
 
