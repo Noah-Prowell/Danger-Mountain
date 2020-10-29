@@ -97,8 +97,8 @@ To further show how my second regression violates the assumtions for a linear re
 </p>
 <br />
 Below is the summary table for my quantile regression, the effect on area from mountains tha face north and south. 
-<br />
 
+<br />
 <p align="center">
     <img src="quantile_summary.png" size = '700x400'/>
 </p>
@@ -107,8 +107,8 @@ Below is the summary table for my quantile regression, the effect on area from m
 Conclusion: On average a single increase in aspect degree to the north or south direction leads to an increase in area of 226.33 meters<sup>2</sup> using quantile regression.  My p-value is right on the cusp of the .05 significance level for rejecting the null hypothesis.  Which again can be seen in the confidence interval as it is very close to containing zero.  
 <br />
 Next is the summary table for my linear regression, the effect on area from difference in elevation.
-<br />
 
+<br />
 <p align="center">
     <img src="linear_summary.png" size = '700x400'/>
 </p>
