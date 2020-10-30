@@ -37,7 +37,7 @@ I changed my index to the avalanche number.  I also changed the date_release to 
 To continue my EDA I plotted a few of my variables to help me visualize the data.
 
 <p align="center">
-    <img src="graphs/aspect_deg_hist.png" width='700'/>
+    <img src="graphs/aspect_deg_hist_new.png" width='700'/>
 </p>
 
 <p align="center">
