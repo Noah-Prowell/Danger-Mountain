@@ -1,6 +1,6 @@
 # Danger Mountain
 
-The dataset I decided to use is avalanche data from the ski resorts inside of Davos, Switzerland.  The data ranged from the year 1998 up to 2019.  My data was drawn from Kaggle and was set up quite nicely to begin with.  
+The dataset I decided to use is avalanche data from Davos, Switzerland.  The data ranged from the year 1998 up to 2019.  It is a record of every avalanche that happened in the area.  There is no exact hour and minute time stamp but there is a date that the avalanche occured at.  The months range from October at the earliest and June at the latest with everything inbetween.
 
 # My Data and Data Cleaning
 It started with the avalanche number, the date of release, the snow type, trigger type, max and min elevation in meters, aspect degrees, length, width, perimeter length, area, size class, weight, and max danger correlation.
