@@ -53,7 +53,7 @@ To continue my EDA I plotted a few of my variables to help me visualize the data
 </p>
 
 
-# Hypothesis Test
+# Which is larger: Dry or Wet Avalanches?
 
 For my hypothesis test I decided to test whether the mean area of avalanches with wet snow type is equal to the mean area with dry snow type.  <br />
 <br />
@@ -76,7 +76,7 @@ Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, 
 
 <br />
 
-# Regressions
+# My questions and How I Tried to Answer Them
 I conducted two regressions on my data.  First I wanted to see if a mountain with a northern and southern facing direction caused a larger avalanche.  Secondly I wanted to see if a large difference in elevation would cause a larger avalanche vs a smaller difference.    <br />
 My first step to do this regression is to visualize the data to get a better idea of what I am working with.  
 <br />
