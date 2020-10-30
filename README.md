@@ -38,19 +38,19 @@ link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resour
 To continue my EDA I plotted a few of my variables to help me visualize the data.
 
 <p align="center">
-    <img src="aspect_deg_hist.png" width='700'/>
+    <img src="graphs/aspect_deg_hist.png" width='700'/>
 </p>
 
 <p align="center">
-    <img src="danger_area_bar_scatter.png" width='700'/>
+    <img src="graphs/danger_area_bar_scatter.png" width='700'/>
 </p>
 
 <p align="center">
-    <img src="area_scatter_for_each.png" width='700'/>
+    <img src="graphs/area_scatter_for_each.png" width='700'/>
 </p>
 <br />
 <p align="center">
-    <img src="danger_deg_len.png" size = '800x800'/>
+    <img src="graphs/danger_deg_len.png" size = '800x800'/>
 </p>
 
 
@@ -68,7 +68,7 @@ or
 Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, and a standard error of 1153.24.  Looking below at the graph of my test we can see that we are greater than 95% confident that our sample mean is outside -1153.24 and 1153.24.  As shown in the graph my actuall sample mean is represented by the green line which is far outside my distribution.  
 <br />
 <p align="center">
-    <img src="dry_v_wet.png" width='750', height = "300"/>
+    <img src="graphs/dry_v_wet.png" width='750', height = "300"/>
 </p>
 <br />
 - The p-value = 1.6599364216596502e-13, which is less than our significance level of 0.05, so we must reject the null hypothesis.
@@ -81,7 +81,7 @@ I conducted two regressions on my data.  First I wanted to see if a mountain wit
 My first step to do this regression is to visualize the data to get a better idea of what I am working with.  
 <br />
 <p align="center">
-    <img src="regression_scatter_plot.png" width='700'/>
+    <img src="graphs/regression_scatter_plot.png" width='700'/>
 </p>
 <br />
 As you can see above my data is not very good to be running regressions on.  It definitly violates some assumtions for a linear regression.  So for my north and south regression I used a quantile regression instead so that I do not violate the assumtions of a linear regression.  The assumptions of a quantile regression are linearity, no multicolinearity, and independence.  The quantile regression was a more appropraite model because my data is not very highly correlated and is not normally distributed.  
@@ -92,24 +92,24 @@ For my second regression the data is a little better to not violate the assumtio
 <br />
 First is the north and south quantile regression
 <p align="center">
-    <img src="quant_reg_qqplot.png" width='700'/>
+    <img src="graphs/quant_reg_qqplot.png" width='700'/>
 </p>
 <br />
 Next is the difference in elevation linear regression
 <p align="center">
-    <img src="linear_reg_qqplot.png" size = '800x600'/>
+    <img src="graphs/linear_reg_qqplot.png" size = '800x600'/>
 </p>
 <br />
 To further show how my second regression violates the assumtions for a linear regression, below is a residuals plot that shows how much heteroscedasticity is contained in my data.
 <p align="center">
-    <img src="elev_diff_resid.png" size = '700x400'/>
+    <img src="graphs/elev_diff_resid.png" size = '700x400'/>
 </p>
 <br />
 Below is the summary table for my quantile regression, the effect on area from mountains tha face north and south. 
 
 <br />
 <p align="center">
-    <img src="quantile_summary.png" size = '700x400'/>
+    <img src="graphs/quantile_summary.png" size = '700x400'/>
 </p>
 
 <br />
@@ -119,7 +119,7 @@ Next is the summary table for my linear regression, the effect on area from diff
 
 <br />
 <p align="center">
-    <img src="linear_summary.png" size = '700x400'/>
+    <img src="graphs/linear_summary.png" size = '700x400'/>
 </p>
 
 <br />
