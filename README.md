@@ -70,8 +70,10 @@ Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, 
     <img src="graphs/dry_v_wet.png" width='750', height = "300"/>
 </p>
 <br />
+
 - The p-value = 1.6599364216596502e-13, which is less than our significance level of 0.05, so we must reject the null hypothesis.
 - The probability of seeing these sample means given the null hypothesis is true is 1.6599364216596502e-13
+
 <br />
 
 # Regressions
