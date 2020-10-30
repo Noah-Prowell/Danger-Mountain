@@ -58,11 +58,11 @@ To continue my EDA I plotted a few of my variables to help me visualize the data
 For my hypothesis test I decided to test whether the mean area of avalanches with wet snow type is equal to the mean area with dry snow type.  <br />
 <br />
 Listed below is my two tail null and alternate hypothesis:
-- h0: mean area of dry avalanches = mean area of wet avalanches
-- ha: mean area of dry avalanches != mean area of wet avalanches <br />
+- H0: mean area of dry avalanches = mean area of wet avalanches
+- HA: mean area of dry avalanches != mean area of wet avalanches <br />
 or
-- h0 : mean area of dry avalaches - mean area of wet avalanches = 0
-- ha: mean area of dry avalaches - mean area of wet avalanches != 0
+- H0 : mean area of dry avalaches - mean area of wet avalanches = 0
+- HA: mean area of dry avalaches - mean area of wet avalanches != 0
 <br />
 Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, and a standard error of 1153.24.  Looking below at the graph of my test we can see that we are greater than 95% confident that our sample mean is outside -1153.24 and 1153.24.  As shown in the graph my actuall sample mean is represented by the green line which is far outside my distribution.  
 <br />
