@@ -124,7 +124,7 @@ Next is the summary table for my linear regression, the effect on area from diff
 Conclusion: On average a single increase is the difference in elevation leads to an increase in avalanche area of 198.6 meters<sup>2</sup>.  In this regression my data is at least a little bit correlated with each other.  But is not very normal according to the Durbin-Watson test.  Ignoring that my p-value is so small it is basically zero meaning my data is significant and there is a very small chance that my 95% confidence interval will contain zero.
 
 # Conclusion
-After conducting this experiement I thought about what possible exogenous or external factors that could have effected my test.  some possibilities are a changing climate possibly from pollution or the rise in the earths temperature.  Another could be a rise in eratic weather that cause huge snow dumps and ergo an increase in avalanches.  In other words there are many other factors that are not strictly expressed in the data that could have affected my experiment.     
+After conducting this experiment I thought about what possible exogenous or external factors that could have effected my test.  some possibilities are a changing climate possibly from pollution or the rise in the earths temperature.  Another could be a rise in erratic weather that cause huge snow dumps and ergo an increase in avalanches.  In other words there are many other factors that are not strictly expressed in the data that could have affected my experiment.     
 <br />
 All in all no nobel prize will be won from this dataset, but hopefully you will have learned something about avalanches.
 
