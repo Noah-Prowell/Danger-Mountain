@@ -1,13 +1,12 @@
 # Danger Mountain
+Disclaimer: Do not cause avalanches on the mountain and measure them to get more robust data.  Leave that to the professionals.
 
 The dataset I decided to use is avalanche data from Davos, Switzerland.  The data ranged from the year 1998 up to 2019.  It is a record of every avalanche that happened in the area.  There is no exact hour and minute time stamp but there is a date that the avalanche occured at.  The months range from October at the earliest and June at the latest with everything inbetween.
 
 # My Data and Data Cleaning
-It started with the avalanche number, the date of release, the snow type, trigger type, max and min elevation in meters, aspect degrees, length, width, perimeter length, area, size class, weight, and max danger correlation.
+My data started with the following columns: avalanche number, the date of release, the snow type, trigger type, max and min elevation in meters, aspect degrees, length, width, perimeter length, area, size class, weight, and max danger correlation.
 
 I changed my index to the avalanche number.  I also changed the date_release to a date time.  I changed the snow type and trigger type to a catageroical.  Afer doing this I was ready to start my EDA.
-
-link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resource/4c2b7c38-a874-45fc-9833-fdf83823067b/download/data_set_1_avalanche_observations_wi9899_to_wi1819_davos.csv
 
 # EDA
 1. Snow types
@@ -30,10 +29,10 @@ link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resour
      - The final area the avalanche covers  
 
 4. Here are a few statistics about my data:
-   - Mean aspect degrees: 151.415
-   - Median aspect degrees: 125.0
-   - Mean impact area: 16638.671
-   - Median impact area: 5624.5
+   - Mean aspect degrees: 151.415<sup>o</sup>
+   - Median aspect degrees: 125.0<sup>o</sup>
+   - Mean impact area: 16638.671 m<sup>2</sup>
+   - Median impact area: 5624.5 m<sup>2</sup>
 
 To continue my EDA I plotted a few of my variables to help me visualize the data.
 
@@ -76,8 +75,7 @@ Using a welches t-test I obtained a t-value of 0.01057, a p-value of 1.66 e-13, 
 <br />
 
 # Regressions
-I conducted two regressions on my data.  First I wanted to see if a mountain with a northern and southern facing direction caused a larger avalanche.  Secondly I wanted to see if a large difference in elevation would cause a larger avalanche vs a smaller difference.    
-<br />
+I conducted two regressions on my data.  First I wanted to see if a mountain with a northern and southern facing direction caused a larger avalanche.  Secondly I wanted to see if a large difference in elevation would cause a larger avalanche vs a smaller difference.    <br />
 My first step to do this regression is to visualize the data to get a better idea of what I am working with.  
 <br />
 <p align="center">
@@ -124,5 +122,13 @@ Next is the summary table for my linear regression, the effect on area from diff
 
 <br />
 Conclusion: On average a single increase is the difference in elevation leads to an increase in avalanche area of 198.6 meters<sup>2</sup>.  In this regression my data is at least a little bit correlated with each other.  But is not very normal according to the Durbin-Watson test.  Ignoring that my p-value is so small it is basically zero meaning my data is significant and there is a very small chance that my 95% confidence interval will contain zero.
-  
-  
+
+# Conclusion
+After conducting this experiement I thought about what possible exogenous or external factors that could have effected my test.  some possibilities are a changing climate possibly from pollution or the rise in the earths temperature.  Another could be a rise in eratic weather that cause huge snow dumps and ergo an increase in avalanches.  In other words there are many other factors that are not strictly expressed in the data that could have affected my experiment.     
+<br />
+All in all no nobel prize will be won from this dataset, but hopefully you will have learned something about avalanches.
+
+# Appendix
+
+- Dataset link :https://www.envidat.ch/dataset/ce11efbe-4dac-4ff5-9a3d-f01e2c573292/resource/4c2b7c38-a874-45fc-9833-fdf83823067b/download/data_set_1_avalanche_observations_wi9899_to_wi1819_davos.csv
+
