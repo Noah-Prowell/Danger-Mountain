@@ -104,11 +104,12 @@ av_df_unknown = av_df[av_df['trigger_type'] == 'UNKNOWN']
 
 """Idea: A heat map of the aspect degrees on a map of davos where red is a southern face and blue is a northern face"""
 
-plt.hist(av_df['aspect_degrees'])
+# plt.hist(av_df['aspect_degrees'])
+sns.histplot(av_df['aspect_degrees'])
 plt.title('Aspect Degrees Histogram')
 plt.xlabel('Aspect Degrees')
 plt.ylabel('Number of aspect degree in each group')
-plt.savefig("aspect_deg_hist_new")
+plt.savefig("../graphs/aspect_deg_hist_new")
 danger_area, danger_mean, danger_median = get_two_columns_mean_median(av_df, 'max.danger.corr', 'area_m2', 'max.danger.corr', 'area_m2')
 
 # sns.catplot(x = 'max.danger.corr', y = 'area_m2', data = danger_area)
